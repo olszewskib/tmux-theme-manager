@@ -12,8 +12,4 @@ set_primary_theme() {
     tmux set-option -g message-fg white
 }
 
-if [ "$1" == "primary" ]; then
-    set_primary_theme
-else
-    echo "Usage: theme-manager.tmux [primary|....]"
-fi
+set_primary_theme
